@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stable Table Woodworking &amp; Restoration</title>
-  <meta name="description" content="Custom woodworking, furniture repair, and restoration in Northern Michigan. Free estimates. Pickup & delivery available." />
+  <meta name="description" content="Custom woodworking, furniture repair and restoration in Northern Michigan. Free estimates. Pickup & delivery available." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +12,326 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    body {
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
-        'Apple Color Emoji','Segoe UI Emoji';
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'; }
+
+    /* Wood + tech vibe */
+    .bg-grid {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(245, 158, 11, 0.22) 1px, transparent 0),
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 20px 20px, 40px 40px, 40px 40px;
+      background-position: 0 0, 0 0, 0 0;
     }
-    .hero-bg {
+    .hero-img {
       background-image: url('assets/FB_IMG_1758999273437_1.jpg');
       background-size: cover;
       background-position: center;
     }
     .glass {
-      background: rgba(255,255,255,0.90);
-      backdrop-filter: blur(10px);
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(245, 158, 11, 0.22);
+    }
+    .card {
+      background: rgba(2, 6, 23, 0.72);
+      border: 1px solid rgba(245, 158, 11, 0.18);
+    }
+    .ring-amber-soft { box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.22), 0 18px 50px rgba(0,0,0,0.35); }
+    .fade-bottom {
+      mask-image: linear-gradient(to bottom, black 75%, transparent);
+      -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent);
     }
   </style>
 </head>
 
-<body class="bg-stone-100 text-stone-800">
-
+<body class="bg-slate-950 text-slate-100">
   <!-- Top bar -->
-  <div class="bg-stone-950 text-stone-100">
+  <div class="bg-slate-950/90 border-b border-amber-500/20">
     <div class="max-w-6xl mx-auto px-6 py-3 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm">
-      <span class="text-stone-200">Serving Cheboygan &amp; all of Northern Michigan</span>
+      <span class="text-slate-300">Serving Cheboygan &amp; all of Northern Michigan</span>
       <div class="flex gap-4">
+        <a class="font-semibold text-amber-200 hover:text-amber-100 underline underline-offset-4" href="tel:+19893065212">Call/Text: (989) 306-5212</a>
+        <a class="font-semibold text-slate-200 hover:text-white" href="#contact">Free Estimate</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 hero-img"></div>
+    <div class="absolute inset-0 bg-slate-950/70"></div>
+    <div class="absolute inset-0 bg-grid opacity-60"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-16 sm:py-24">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-amber-200/90">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            Custom builds • Repair • Restoration
+          </div>
+
+          <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold leading-tight">
+            Stable Table
+            <span class="block text-amber-200">Woodworking &amp; Restoration</span>
+          </h1>
+
+          <p class="mt-5 text-lg text-slate-200 leading-relaxed">
+            Northern Michigan craftsmanship with a modern finish. We build, repair, and restore pieces that last—clean joinery, durable finishes, and honest timelines.
+          </p>
+
+          <div class="mt-7 flex flex-col sm:flex-row gap-3">
+            <a href="#contact" class="inline-flex justify-center rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-3 font-extrabold ring-amber-soft">
+              Get a Free Estimate
+            </a>
+            <a href="#before-after" class="inline-flex justify-center rounded-2xl border border-amber-500/30 bg-slate-950/30 hover:bg-slate-950/50 text-slate-100 px-6 py-3 font-semibold">
+              See Before &amp; After
+            </a>
+          </div>
+
+          <div class="mt-7 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+            <div class="glass rounded-2xl p-3">
+              <div class="font-extrabold text-amber-200">Free</div>
+              <div class="text-slate-200/90">Estimates</div>
+            </div>
+            <div class="glass rounded-2xl p-3">
+              <div class="font-extrabold text-amber-200">Pickup</div>
+              <div class="text-slate-200/90">&amp; Delivery</div>
+            </div>
+            <div class="glass rounded-2xl p-3 col-span-2 sm:col-span-1">
+              <div class="font-extrabold text-amber-200">Repair</div>
+              <div class="text-slate-200/90">+ Restoration</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: feature panel -->
+        <div class="relative">
+          <div class="card rounded-3xl overflow-hidden ring-amber-soft">
+            <div class="p-6 sm:p-8">
+              <h2 class="text-xl sm:text-2xl font-extrabold">What you can expect</h2>
+              <p class="mt-3 text-slate-200 leading-relaxed">
+                Clear communication, clean workmanship, and results you’ll be proud to keep in the family.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm text-slate-200">
+                <li class="flex gap-3"><span class="text-amber-300">▸</span>Strong repairs (not “temporary fixes”)</li>
+                <li class="flex gap-3"><span class="text-amber-300">▸</span>Finish work that matches and lasts</li>
+                <li class="flex gap-3"><span class="text-amber-300">▸</span>Options: budget-friendly to premium</li>
+              </ul>
+
+              <div class="mt-6 flex flex-col sm:flex-row gap-3">
+                <a class="rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 px-5 py-3 font-semibold" href="#services">Browse Services</a>
+                <a class="rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 px-5 py-3 font-semibold" href="#mission">Our Mission</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 text-xs text-slate-300">
+            Want a quote fast? Text photos to <a class="text-amber-200 underline underline-offset-4" href="tel:+19893065212">(989) 306-5212</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-slate-950">
+
+    <!-- Mission -->
+    <section id="mission" class="max-w-6xl mx-auto px-6 py-14">
+      <div class="grid lg:grid-cols-3 gap-8 items-start">
+        <div class="lg:col-span-1">
+          <h2 class="text-3xl font-extrabold">Our Mission</h2>
+          <p class="mt-3 text-slate-300">Craft that honors the past and holds up for the future.</p>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="card rounded-3xl p-6 sm:p-8">
+            <p class="text-slate-200 leading-relaxed">
+              At Stable Table, we craft timeless pieces and breathe new life into worn or damaged furniture with every cut and restoration.
+              Rooted in craftsmanship and fueled by precision, we specialize in custom woodworking and meticulous restoration projects that
+              honor the past while building unforgettable futures. With a full-service shop and a passion for clean results, we deliver
+              standout work—whether it’s a bespoke creation or a historic revival. Expect top-tier service, free estimates, and responsive
+              support when you need it. Call anytime—Wade Canell and the team are here to make it happen!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-14 border-y border-amber-500/15 bg-grid">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-extrabold">What We Do</h2>
+        <p class="mt-3 text-slate-300 max-w-3xl">
+          Custom builds, structural repairs, refinishing, and restorations—done with care and the right materials.
+        </p>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card rounded-3xl p-6">
+            <h3 class="font-extrabold text-xl">Custom Woodworking</h3>
+            <p class="mt-2 text-slate-200/90">Dining tables, end tables, benches, mantels, countertops, and one-off custom builds.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="font-extrabold text-xl">Furniture Repair</h3>
+            <p class="mt-2 text-slate-200/90">Loose joints, broken legs, refinishing, structural fixes, color matching, and stabilization.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="font-extrabold text-xl">Restoration</h3>
+            <p class="mt-2 text-slate-200/90">Heirloom and antique restoration with period-appropriate techniques and finishes.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="font-extrabold text-xl">Outdoor Projects</h3>
+            <p class="mt-2 text-slate-200/90">Patio tabletops, garden benches, sealing, and seasonal maintenance.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="font-extrabold text-xl">Emergency Support</h3>
+            <p class="mt-2 text-slate-200/90">24/7 help for urgent repairs like water damage or structural failures.</p>
+          </div>
+          <div class="card rounded-3xl p-6">
+            <h3 class="font-extrabold text-xl">Pickup &amp; Delivery</h3>
+            <p class="mt-2 text-slate-200/90">Local pickup and delivery available across Northern Michigan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & After (photo-first, clean) -->
+    <section id="before-after" class="max-w-6xl mx-auto px-6 py-14">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <h2 class="text-3xl font-extrabold">Before &amp; After</h2>
+          <p class="mt-3 text-slate-300">A few recent projects. We can add more photos anytime.</p>
+        </div>
+        <a href="#contact" class="inline-flex justify-center rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-3 font-extrabold">
+          Get a Free Estimate
+        </a>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <div class="card rounded-3xl overflow-hidden">
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999273437_1.jpg" alt="Before project photo" />
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold tracking-widest bg-slate-950/70 text-white px-2 py-1 rounded-full">BEFORE</span>
+            </div>
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999336668.jpg" alt="After project photo" />
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold tracking-widest bg-amber-500 text-slate-950 px-2 py-1 rounded-full">AFTER</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-extrabold">Repair + Refinish</h3>
+            <p class="mt-2 text-sm text-slate-300">Structural repair, cleanup, and a durable finish.</p>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl overflow-hidden">
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999285409_1.jpg" alt="Before project photo" />
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold tracking-widest bg-slate-950/70 text-white px-2 py-1 rounded-full">BEFORE</span>
+            </div>
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999329592_1.jpg" alt="After project photo" />
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold tracking-widest bg-amber-500 text-slate-950 px-2 py-1 rounded-full">AFTER</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-extrabold">Surface Restoration</h3>
+            <p class="mt-2 text-sm text-slate-300">Leveling, repair, and resealing to bring it back to life.</p>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl overflow-hidden">
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999291614_1.jpg" alt="Before project photo" />
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold tracking-widest bg-slate-950/70 text-white px-2 py-1 rounded-full">BEFORE</span>
+            </div>
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999303505_1.jpg" alt="After project photo" />
+              <span class="absolute top-3 left-3 text-[11px] font-extrabold tracking-widest bg-amber-500 text-slate-950 px-2 py-1 rounded-full">AFTER</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-extrabold">Detail Work + Finish Match</h3>
+            <p class="mt-2 text-sm text-slate-300">Detail repair with finishes that blend correctly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h3 class="text-xl font-extrabold">More photos</h3>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <img class="w-full h-56 object-cover rounded-3xl ring-1 ring-amber-500/15" src="assets/FB_IMG_1758999273437_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-3xl ring-1 ring-amber-500/15" src="assets/FB_IMG_1758999336668.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-3xl ring-1 ring-amber-500/15" src="assets/FB_IMG_1758999285409_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-3xl ring-1 ring-amber-500/15" src="assets/FB_IMG_1758999329592_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-3xl ring-1 ring-amber-500/15" src="assets/FB_IMG_1758999291614_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-3xl ring-1 ring-amber-500/15" src="assets/FB_IMG_1758999303505_1.jpg" alt="Stable Table project image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-14 border-t border-amber-500/15 bg-grid">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="card rounded-3xl p-6 sm:p-10">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <div>
+              <h2 class="text-3xl font-extrabold">Get Your Free Estimate</h2>
+              <p class="mt-2 text-slate-300">Tell us about your project and we’ll get right back to you.</p>
+            </div>
+            <div class="text-sm text-slate-200">
+              Prefer phone? <a class="text-amber-200 underline underline-offset-4 font-semibold" href="tel:+19893065212">(989) 306-5212</a>
+            </div>
+          </div>
+
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="mt-8 grid sm:grid-cols-2 gap-4">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <label class="block">
+              <span class="font-semibold text-slate-200">Name</span>
+              <input class="mt-1 w-full rounded-2xl px-4 py-3 bg-slate-950/60 border border-amber-500/20 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/60" type="text" name="name" required/>
+            </label>
+
+            <label class="block">
+              <span class="font-semibold text-slate-200">Email</span>
+              <input class="mt-1 w-full rounded-2xl px-4 py-3 bg-slate-950/60 border border-amber-500/20 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/60" type="email" name="email" required/>
+            </label>
+
+            <label class="block sm:col-span-2">
+              <span class="font-semibold text-slate-200">Phone</span>
+              <input class="mt-1 w-full rounded-2xl px-4 py-3 bg-slate-950/60 border border-amber-500/20 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/60" type="tel" name="phone" placeholder="Optional"/>
+            </label>
+
+            <label class="block sm:col-span-2">
+              <span class="font-semibold text-slate-200">Project details</span>
+              <textarea class="mt-1 w-full rounded-2xl px-4 py-3 bg-slate-950/60 border border-amber-500/20 text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400/60" name="message" rows="6" placeholder="Tell us what you need…"></textarea>
+            </label>
+
+            <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
+              <p class="text-sm text-slate-300">Serving Cheboygan and all of Northern Michigan.</p>
+              <button class="rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 px-7 py-3 font-extrabold" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-950 border-t border-amber-500/15 text-slate-300">
+    <div class="max-w-6xl mx-auto px-6 py-8 text-sm flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+      <span>© 2025 Stable Table Woodworking &amp; Restoration</span>
+      <span>Website by Wade Canell • Hosted on Netlify</span>
+    </div>
+  </footer>
+</body>
+</html>      <div class="flex gap-4">
         <a class="font-semibold hover:underline" href="tel:+19893065212">Call: (989) 306-5212</a>
         <a class="font-semibold hover:underline" href="#contact">Free Estimate</a>
       </div>
