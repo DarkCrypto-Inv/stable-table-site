@@ -4,104 +4,281 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stable Table Woodworking &amp; Restoration</title>
-  <meta name="description" content="Custom woodworking, furniture repair and restoration in Northern Michigan. Free estimates. 24/7 emergency support." />
+  <meta name="description" content="Custom woodworking, furniture repair, and restoration in Northern Michigan. Free estimates. Pickup & delivery available." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'; }
-    .grain { background-image: url('assets/FB_IMG_1758999273437_1.jpg'); background-size: cover; background-position: center; }
-    .glass { background: rgba(255,255,255,0.85); backdrop-filter: blur(6px); }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+        'Apple Color Emoji','Segoe UI Emoji';
+    }
+    .hero-bg {
+      background-image: url('assets/FB_IMG_1758999273437_1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .glass {
+      background: rgba(255,255,255,0.90);
+      backdrop-filter: blur(10px);
+    }
   </style>
 </head>
+
 <body class="bg-stone-100 text-stone-800">
-  <header class="grain relative">
-    <div class="absolute inset-0 bg-stone-900/60"></div>
-    <div class="relative max-w-6xl mx-auto px-6 py-20 sm:py-28">
-      <h1 class="text-4xl sm:text-6xl font-extrabold text-white drop-shadow">Stable Table<br/>Woodworking &amp; Restoration</h1>
-      <p class="mt-6 text-lg sm:text-xl text-stone-100 max-w-3xl">Northern Michigan's choice for custom builds, repairs, and heirloom restorations. Free estimates. 24/7 emergency support.</p>
-      <div class="mt-8 flex gap-4">
-        <a href="#contact" class="inline-block rounded-2xl bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 font-semibold shadow-lg">Get a Free Estimate</a>
-        <a href="#services" class="inline-block rounded-2xl bg-white/90 hover:bg-white text-stone-900 px-6 py-3 font-semibold shadow-lg">Our Services</a>
+
+  <!-- Top bar -->
+  <div class="bg-stone-950 text-stone-100">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm">
+      <span class="text-stone-200">Serving Cheboygan &amp; all of Northern Michigan</span>
+      <div class="flex gap-4">
+        <a class="font-semibold hover:underline" href="tel:+19893065212">Call: (989) 306-5212</a>
+        <a class="font-semibold hover:underline" href="#contact">Free Estimate</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero-bg relative">
+    <div class="absolute inset-0 bg-stone-900/70"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 py-16 sm:py-24">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white drop-shadow leading-tight">
+          Stable Table<br/>Woodworking &amp; Restoration
+        </h1>
+
+        <p class="mt-6 text-lg sm:text-xl text-stone-100 leading-relaxed">
+          Custom builds, furniture repair, and heirloom restoration—done right, with clean finishes and honest timelines.
+        </p>
+
+        <!-- Trust chips -->
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="inline-flex items-center rounded-full bg-white/10 text-white px-3 py-1 text-sm">Free estimates</span>
+          <span class="inline-flex items-center rounded-full bg-white/10 text-white px-3 py-1 text-sm">Pickup &amp; delivery available</span>
+          <span class="inline-flex items-center rounded-full bg-white/10 text-white px-3 py-1 text-sm">Repair + restoration specialists</span>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex justify-center rounded-2xl bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 font-semibold shadow-lg">
+            Get a Free Estimate
+          </a>
+          <a href="#before-after" class="inline-flex justify-center rounded-2xl bg-white/90 hover:bg-white text-stone-900 px-6 py-3 font-semibold shadow-lg">
+            See Before &amp; After
+          </a>
+        </div>
+
+        <p class="mt-4 text-sm text-stone-200">
+          Prefer phone? <a class="underline font-semibold" href="tel:+19893065212">(989) 306-5212</a>
+        </p>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="mission" class="max-w-5xl mx-auto px-6 py-12">
-      <h2 class="text-3xl font-extrabold">Our Mission</h2>
-      <p class="mt-4 text-lg leading-relaxed">At Stable Table, we craft timeless masterpieces and breathe new life into history with every cut and restoration. Rooted in a legacy of craftsmanship and fueled by unmatched expertise, we specialize in custom woodworking and meticulous restoration projects that honor the past while building unforgettable futures. With a full-service shop and a passion for precision, we deliver jaw-dropping results—whether it’s a bespoke creation or a historic revival. Expect top-tier service, free estimates, and 24/7 emergency support, because we don’t just build furniture, we forge legacies. Call us anytime—Wade Canell and the team are here to make it happen!</p>
+
+    <!-- How it works -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-extrabold">How It Works</h2>
+      <p class="mt-3 text-stone-700 max-w-3xl">
+        Fast, simple, and transparent—so you know exactly what you’re getting.
+      </p>
+
+      <div class="mt-8 grid sm:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white shadow-sm">
+          <div class="text-amber-700 font-extrabold text-xl">1</div>
+          <h3 class="mt-2 font-bold text-xl">Send photos + details</h3>
+          <p class="mt-2 text-stone-700">Text or submit the form with photos, dimensions, and what you want fixed or built.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white shadow-sm">
+          <div class="text-amber-700 font-extrabold text-xl">2</div>
+          <h3 class="mt-2 font-bold text-xl">Get a quote + timeline</h3>
+          <p class="mt-2 text-stone-700">You get a clear estimate, options, and a realistic turnaround time.</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white shadow-sm">
+          <div class="text-amber-700 font-extrabold text-xl">3</div>
+          <h3 class="mt-2 font-bold text-xl">We build / repair</h3>
+          <p class="mt-2 text-stone-700">Shop work + finishing done right. Pickup &amp; delivery available across Northern Michigan.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="services" class="bg-white py-12">
+    <!-- Services -->
+    <section id="services" class="bg-white py-12 border-y">
       <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl font-extrabold">What We Do</h2>
+        <p class="mt-3 text-stone-700 max-w-3xl">
+          Practical, durable work that looks great and holds up in real life.
+        </p>
+
         <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="p-6 rounded-2xl shadow-sm border bg-stone-50">
             <h3 class="font-bold text-xl">Custom Woodworking</h3>
-            <p class="mt-2 text-stone-700">Dining tables, end tables, benches, mantels, countertops, and one‑off custom builds.</p>
+            <p class="mt-2 text-stone-700">Tables, benches, mantels, countertops, and one-off builds.</p>
           </div>
           <div class="p-6 rounded-2xl shadow-sm border bg-stone-50">
             <h3 class="font-bold text-xl">Furniture Repair</h3>
-            <p class="mt-2 text-stone-700">Loose joints, broken legs, refinishing, structural fixes, color matching, and stabilization.</p>
+            <p class="mt-2 text-stone-700">Loose joints, broken legs, structural fixes, stabilization, color matching.</p>
           </div>
           <div class="p-6 rounded-2xl shadow-sm border bg-stone-50">
             <h3 class="font-bold text-xl">Restoration</h3>
-            <p class="mt-2 text-stone-700">Heirloom and antique restoration with period‑appropriate techniques and finishes.</p>
+            <p class="mt-2 text-stone-700">Heirloom and antique restoration with appropriate techniques and finishes.</p>
           </div>
           <div class="p-6 rounded-2xl shadow-sm border bg-stone-50">
             <h3 class="font-bold text-xl">Outdoor Projects</h3>
-            <p class="mt-2 text-stone-700">Patio tabletops, garden benches, sealing, and seasonal maintenance.</p>
+            <p class="mt-2 text-stone-700">Patio pieces, sealing, refinishing, and seasonal refresh work.</p>
           </div>
           <div class="p-6 rounded-2xl shadow-sm border bg-stone-50">
-            <h3 class="font-bold text-xl">Emergency Support</h3>
-            <p class="mt-2 text-stone-700">24/7 help for urgent repairs like water damage or structural failures.</p>
+            <h3 class="font-bold text-xl">Water / Damage Triage</h3>
+            <p class="mt-2 text-stone-700">Quick assessment and next-step plan for urgent damage situations.</p>
           </div>
           <div class="p-6 rounded-2xl shadow-sm border bg-stone-50">
             <h3 class="font-bold text-xl">Pickup &amp; Delivery</h3>
-            <p class="mt-2 text-stone-700">Local pickup and delivery available across Northern Michigan.</p>
+            <p class="mt-2 text-stone-700">Local pickup and delivery options across Northern Michigan.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="max-w-6xl mx-auto px-6 py-12">
-      <h2 class="text-3xl font-extrabold">Before &amp; After</h2>
-      <p class="mt-3 text-stone-700">A few recent projects. We can add more photos anytime.</p>
-      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img class="w-full h-64 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999273437_1.jpg" alt="Stable Table project image" /><img class="w-full h-64 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999336668.jpg" alt="Stable Table project image" /><img class="w-full h-64 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999285409_1.jpg" alt="Stable Table project image" /><img class="w-full h-64 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999329592_1.jpg" alt="Stable Table project image" /><img class="w-full h-64 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999291614_1.jpg" alt="Stable Table project image" /><img class="w-full h-64 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999303505_1.jpg" alt="Stable Table project image" />
+    <!-- Before & After -->
+    <section id="before-after" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <h2 class="text-3xl font-extrabold">Before &amp; After</h2>
+          <p class="mt-3 text-stone-700 max-w-3xl">
+            Real projects. Real transformations. (Want yours featured? Send photos.)
+          </p>
+        </div>
+        <a href="#contact" class="inline-flex justify-center rounded-2xl bg-amber-600 hover:bg-amber-700 text-white px-5 py-3 font-semibold shadow-lg">
+          Get a Free Estimate
+        </a>
+      </div>
+
+      <!-- Paired cards (using your existing images in 3 pairs) -->
+      <div class="mt-8 grid lg:grid-cols-3 gap-6">
+        <!-- Pair 1 -->
+        <div class="rounded-2xl overflow-hidden border bg-white shadow-sm">
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999273437_1.jpg" alt="Before project photo" />
+              <span class="absolute top-3 left-3 text-xs font-bold bg-stone-900/70 text-white px-2 py-1 rounded-full">BEFORE</span>
+            </div>
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999336668.jpg" alt="After project photo" />
+              <span class="absolute top-3 left-3 text-xs font-bold bg-amber-700/80 text-white px-2 py-1 rounded-full">AFTER</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Repair + Refinish</h3>
+            <p class="mt-2 text-stone-700 text-sm">Structural repair, cleanup, and a finish that looks right and holds up.</p>
+          </div>
+        </div>
+
+        <!-- Pair 2 -->
+        <div class="rounded-2xl overflow-hidden border bg-white shadow-sm">
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999285409_1.jpg" alt="Before project photo" />
+              <span class="absolute top-3 left-3 text-xs font-bold bg-stone-900/70 text-white px-2 py-1 rounded-full">BEFORE</span>
+            </div>
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999329592_1.jpg" alt="After project photo" />
+              <span class="absolute top-3 left-3 text-xs font-bold bg-amber-700/80 text-white px-2 py-1 rounded-full">AFTER</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Surface Restoration</h3>
+            <p class="mt-2 text-stone-700 text-sm">Leveling, repair, and resealing to bring a worn surface back to life.</p>
+          </div>
+        </div>
+
+        <!-- Pair 3 -->
+        <div class="rounded-2xl overflow-hidden border bg-white shadow-sm">
+          <div class="grid grid-cols-2">
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999291614_1.jpg" alt="Before project photo" />
+              <span class="absolute top-3 left-3 text-xs font-bold bg-stone-900/70 text-white px-2 py-1 rounded-full">BEFORE</span>
+            </div>
+            <div class="relative">
+              <img class="w-full h-56 object-cover" src="assets/FB_IMG_1758999303505_1.jpg" alt="After project photo" />
+              <span class="absolute top-3 left-3 text-xs font-bold bg-amber-700/80 text-white px-2 py-1 rounded-full">AFTER</span>
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg">Detail Work + Finish Match</h3>
+            <p class="mt-2 text-stone-700 text-sm">Tight detail work with a finish approach that blends properly.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional: add more photos as a gallery strip -->
+      <div class="mt-10">
+        <h3 class="text-xl font-extrabold">More Project Photos</h3>
+        <p class="mt-2 text-stone-700 text-sm">We can add captions and more before/after pairs anytime.</p>
+        <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <img class="w-full h-56 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999273437_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999336668.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999285409_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999329592_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999291614_1.jpg" alt="Stable Table project image" />
+          <img class="w-full h-56 object-cover rounded-2xl shadow" src="assets/FB_IMG_1758999303505_1.jpg" alt="Stable Table project image" />
+        </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="bg-stone-900 text-stone-100 py-12">
       <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl font-extrabold">Get Your Free Estimate</h2>
-        <p class="mt-2 text-stone-300">Tell us about your project and we’ll get right back to you.</p>
-        <form name="contact" method="POST" data-netlify="true" class="mt-6 grid sm:grid-cols-2 gap-4 glass p-6 rounded-2xl text-stone-900">
+        <p class="mt-2 text-stone-300">Tell me what you need and include photos if you can. I’ll get back to you ASAP.</p>
+
+        <!-- Netlify Form (with honeypot) -->
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          class="mt-6 grid sm:grid-cols-2 gap-4 glass p-6 rounded-2xl text-stone-900"
+        >
           <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
           <label class="block">
             <span class="font-semibold">Name</span>
-            <input class="mt-1 w-full border rounded-xl px-3 py-2" type="text" name="name" required/>
+            <input class="mt-1 w-full border rounded-xl px-3 py-2" type="text" name="name" required />
           </label>
+
           <label class="block">
             <span class="font-semibold">Email</span>
-            <input class="mt-1 w-full border rounded-xl px-3 py-2" type="email" name="email" required/>
+            <input class="mt-1 w-full border rounded-xl px-3 py-2" type="email" name="email" required />
           </label>
+
           <label class="block sm:col-span-2">
             <span class="font-semibold">Phone</span>
-            <input class="mt-1 w-full border rounded-xl px-3 py-2" type="tel" name="phone"/>
+            <input class="mt-1 w-full border rounded-xl px-3 py-2" type="tel" name="phone" placeholder="Optional, but helps for quick quotes" />
           </label>
+
           <label class="block sm:col-span-2">
             <span class="font-semibold">Project details</span>
-            <textarea class="mt-1 w-full border rounded-xl px-3 py-2" name="message" rows="5" placeholder="Tell us what you need…"></textarea>
+            <textarea class="mt-1 w-full border rounded-xl px-3 py-2" name="message" rows="6" placeholder="What is it? What’s wrong? What do you want it to become? Any dimensions? Location? Timeline?"></textarea>
           </label>
-          <div class="sm:col-span-2 flex items-center justify-between">
-            <p class="text-sm text-stone-700">Or call anytime: <strong>(989) 306-5212</strong></p>
-            <button class="rounded-2xl bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 font-semibold shadow-lg" type="submit">Send</button>
+
+          <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <p class="text-sm text-stone-700">
+              Or call/text: <strong><a class="underline" href="tel:+19893065212">(989) 306-5212</a></strong>
+            </p>
+            <button class="rounded-2xl bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 font-semibold shadow-lg" type="submit">
+              Send
+            </button>
           </div>
         </form>
-        <p class="mt-6 text-sm text-stone-400">Serving Cheboygan and all of Northern Michigan.</p>
+
+        <p class="mt-6 text-sm text-stone-400">Cheboygan • Northern Michigan • Pickup &amp; delivery available.</p>
       </div>
     </section>
   </main>
